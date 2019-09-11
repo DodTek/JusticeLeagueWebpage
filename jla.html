@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Justice League</title>
+		
+		<link rel="SHORTCUT ICON" href="Images/JLA.ico">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="CSS/jla.css">
+
+	</head>	
+	<body>
+		<header>
+			<h1>SOFT6007 Assessment 3 - JavaScript</h1>
+			<hr>
+		</header>
+		<nav>
+				<button onclick="show()">Menu</button>
+			<div id="nav">
+				<a href="https://www.youtube.com/watch?v=r9-DM9uBtVI" title="Trailer">Justice League Trailer</a><br>
+				<a href="https://en.wikipedia.org/wiki/Justice_League" title="Justice League History">J.L.A History</a><br>
+				<button onclick="hide()">Close</button>
+			</div>
+			<div id="slidecontainer">
+				<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+				<button onclick="Range()">Try It</button>
+				<p id="val"></p>
+			</div>	
+		</nav>
+		<main>
+			
+			<p id="demo"></p>
+			<h2>Who is your favourite member of the justice league?</h2>
+			<img src="Images/jla.jpg" alt="Justice League" width="600" height="350"><br>
+			<button onclick="heroselect()">Select Your Hero</button>
+			<fieldset id="superman">
+				<div>
+					<img src="Images/supermanlogo.png" alt="SupermanLogo" width="150" height="125">
+					<img src="Images/supermanmain.jpg" alt="Superman" width="150" height="125">
+					<h3>Superman</h3>
+					<p>Alias: Clark Kent<br>
+						Birth Place: Planet Krypton<br>
+						Worked as: Reporter for Daily Planet<br>
+						Main Enemy: Lex Luthor
+					</p>
+				</div>
+			</fieldset>
+			<fieldset id="batman">
+				<div>
+					<img src="Images/batmanlogo.jpg" alt="BatmanLogo" width="150" height="125">
+					<img src="Images/batmanmain.jpg" alt="Batman" width="150" height="125">
+					<h3>Batman</h3>
+					<p>Alias: Bruce Wayne<br>
+						Birth Place: Gotham City<br>
+						Worked as: Ceo of Wayne Tec<br>
+						Main Enemy: The Joker
+					</p>
+				</div>
+			</fieldset>
+			<fieldset id="wonderwoman">
+				<div>
+					<img src="Images/wonderwomanlogo.jpg" alt="WonderWomanLogo" width="150" height="125">
+					<img src="Images/wonderwomanmain.jpg" alt="WonderWoman" width="150" height="125">
+					<h3>Wonder Woman</h3>
+					<p>Alias: Diana Prince<br>
+						Birth Place: Themyscira<br>
+						Worked as: Nurse<br>
+						Main Enemy: Ares
+					</p>
+				</div>
+			</fieldset>
+			<fieldset id="flash">
+				<div>
+					<img src="Images/flashlogo.png" alt="FlashLogo" width="150" height="125">
+					<img src="Images/flashmain.jpg" alt="Flash" width="150" height="125">
+					<h3>The Flash</h3>
+					<p>Alias: Barry Allen<br>
+						Birth Place: Fallville<br>
+						Worked as: Crime Scene Investagator<br>
+						Main Enemy: The Reverse Flash
+					</p>
+				</div>
+			</fieldset>
+			<fieldset id="aquaman">
+				<div>
+					<img src="Images/aquamanlogo.png" alt="AquamanLogo" width="150" height="125">
+					<img src="Images/aquamanmain.jpg" alt="AquaMan" width="150" height="125">
+					<h3>Aquaman</h3>
+					<p>Alias: Arthur Curry<br>
+						Birth Place: Atlantis<br>
+						Worked as: King Of Atlantis<br>
+						Main Enemy: Black Manta
+					</p>
+				</div>
+			</fieldset>
+			<fieldset id="cyborg">
+				<div>
+					<img src="Images/cyborglogo.jpg" alt="CyborgLogo" width="150" height="125">
+					<img src="Images/cyborgmain.jpg" alt="Cyborg" width="150" height="125">
+					<h3>Cyborg</h3>
+					<p>Alias: Victor Stone<br>
+						Birth Place: N/a<br>
+						Worked as: Football Player<br>
+						Main Enemy: N/a
+					</p>
+				</div>
+			</fieldset>
+		</main>
+		<footer>
+			<script>
+				function heroselect() {
+					var x = Math.floor((Math.random() * 6) + 1);
+					document.getElementById("demo").innerHTML = x;
+					
+					if (x == 1) {
+					/* Show SuperMan */
+						document.getElementById("superman").style.display = "block";
+						document.getElementById("batman").style.display = "none";
+						document.getElementById("wonderwoman").style.display = "none";
+						document.getElementById("flash").style.display = "none";
+						document.getElementById("aquaman").style.display = "none";
+						document.getElementById("cyborg").style.display = "none";
+						
+									 }
+					else if (x == 2) {
+					/* Show Batman */
+						document.getElementById("superman").style.display = "none";
+						document.getElementById("batman").style.display = "block";
+						document.getElementById("wonderwoman").style.display = "none";
+						document.getElementById("flash").style.display = "none";
+						document.getElementById("aquaman").style.display = "none";
+						document.getElementById("cyborg").style.display = "none";
+	
+									 }
+					else if (x == 3) {
+					/* Show Wonder Woman */
+						document.getElementById("superman").style.display = "none";
+						document.getElementById("batman").style.display = "none";
+						document.getElementById("wonderwoman").style.display = "block";
+						document.getElementById("flash").style.display = "none";
+						document.getElementById("aquaman").style.display = "none";
+						document.getElementById("cyborg").style.display = "none";
+					
+									 }
+					else if (x == 4) {
+					/* Show The Flash */
+						document.getElementById("superman").style.display = "none";
+						document.getElementById("batman").style.display = "none";
+						document.getElementById("wonderwoman").style.display = "none";
+						document.getElementById("flash").style.display = "block";
+						document.getElementById("aquaman").style.display = "none";
+						document.getElementById("cyborg").style.display = "none";
+						
+									 }
+					else if (x == 5) {
+					/* Show AquaMan */
+						document.getElementById("superman").style.display = "none";
+						document.getElementById("batman").style.display = "none";
+						document.getElementById("wonderwoman").style.display = "none";
+						document.getElementById("flash").style.display = "none";
+						document.getElementById("aquaman").style.display = "block";
+						document.getElementById("cyborg").style.display = "none";
+					
+						}
+					else {
+					/* Show Cyborg */
+						document.getElementById("superman").style.display = "none";
+						document.getElementById("batman").style.display = "none";
+						document.getElementById("wonderwoman").style.display = "none";
+						document.getElementById("flash").style.display = "none";
+						document.getElementById("aquaman").style.display = "none";
+						document.getElementById("cyborg").style.display = "block";
+					
+									 }
+				}
+				function show() {
+					document.getElementById("nav").style.visibility = "visible";
+				}
+				function hide() {
+					document.getElementById("nav").style.visibility = "hidden";
+				}
+				function Range() {
+					var slider = document.getElementById("myRange");
+					var output = document.getElementById("val");
+					output.innerHTML = slider.value;
+					alert(slider)
+					if (slider <= 20) {
+					document.getElementById("val").innerHTML = "Not A Fan";
+					}
+					else if (21 <= slider <= 40) {
+					document.getElementById("val").innerHTML = "Its Ok";
+					}
+					else if (41 <= slider <= 59) {
+					document.getElementById("val").innerHTML = "Its Good";
+					}
+					else if (slider >= 60) {
+					document.getElementById("val").innerHTML = "Fab Page";
+					}
+				}
+			</script>
+			<p><small>Copyright &copy; Donnchadh O'Donoghue</small></p>
+		</footer>
+	</body>
+</html>

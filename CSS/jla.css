@@ -1,0 +1,89 @@
+body{
+	padding: 5%;
+	padding-top:2%;
+	}
+main {
+	background-color: lightgrey;
+	margin: auto;
+	padding-left: 15%;
+	padding-right: 10%;
+	border-radius:10px;
+	border-color: black;
+	padding-bottom: 5%;
+	}
+div {
+	text-align: left;
+	padding-right: 5%;
+	}
+div img { 
+		float: right;
+		padding-right: 20px;
+		}
+fieldset { border-style:solid; 
+		   border-radius:10px;
+		   margin-top: 1%;
+          }
+button {
+		border-color: black;
+		border-radius: 10px;
+		background-color: #2f6b9c;
+       }
+nav {
+	float: left;
+	margin-top: 1%;
+	float: left;
+	width:30%;
+	color: black;
+	padding-left: 5px;
+	}
+a	{
+	border-color: black;
+	border-radius: 10px;
+	background-color: #2f6b9c;
+	padding: 2px;
+	line-height:1.5em;
+	}
+img {
+	border-radius: 10px;
+	}
+a:visited	{
+			color: black;
+			
+			}
+
+footer {
+		background-color: red;
+		border-radius:7px;
+		padding: 5px;
+		border-color: black;
+		}
+footer p {
+		text-align: center;
+		 }
+main button	{
+			margin-left: 450px;
+			}
+#superman	{
+			display: block;
+			}
+#batman		{
+			display: block;
+			}
+#wonderwoman{
+			display: block;
+			}
+#flash		{
+			display: block;
+			}
+#aquaman	{
+			display: block;
+			}
+#cyborg		{
+			display: block;
+			}
+#demo {
+	visibility:hidden;
+	}
+#nav {
+	visibility:hidden;
+	}
